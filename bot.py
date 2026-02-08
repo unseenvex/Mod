@@ -1,4 +1,4 @@
-import discordi
+import discord
 from discord.ext import commands
 import asyncio
 import random
@@ -155,4 +155,5 @@ async def on_ready():
 
 
 bot.run(os.getenv("TOKEN"))
+
 
