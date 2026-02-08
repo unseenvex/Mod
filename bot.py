@@ -1,7 +1,8 @@
-import discord
+import discordi
 from discord.ext import commands
 import asyncio
 import random
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -153,4 +154,5 @@ async def on_ready():
     print(f"Logged in as {bot.user}")
 
 
-bot.run("MTQ3MDExNDc5MjM4MjUyOTY0Ng.G1tEn0.A5b_rBEJrdm11s14BiWuMbrH5fI44w9GmT9KJw")
+bot.run(os.getenv("TOKEN"))
+
